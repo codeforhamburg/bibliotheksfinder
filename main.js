@@ -97,6 +97,7 @@ map.on("load", function() {
         var streetAddress = e.features[0].properties.streetAddress;
         var postalCode = e.features[0].properties.postalCode;
         var Locality = e.features[0].properties.Locality;
+        var url = e.features[0].properties.url;
 
         // Ensure that if the map is zoomed out such that multiple
         // copies of the feature are visible, the popup appears
@@ -108,13 +109,13 @@ map.on("load", function() {
         new mapboxgl.Popup()
             .setLngLat(coordinates)
             .setHTML(
-                '<h1>' + 1 + name + '</h1>' + 
-                '<p>' + telephone + '</p>' + 
-                '<p>' + '</p>' + 
-                '<p>' + email + '</p>' + 
+                '<h1>' + name + '</h1>' + 
                 '<p>' + streetAddress + '</p>' + 
                 '<p>' + postalCode + '</p>' + 
-                '<p>' + Locality + '</p>'
+                '<p>' + Locality + '</p>' +
+               '<p>' + telephone + '</p>' +
+                '<p>' + email + '</p>' + 
+                '<p>' + url + '</p>' +
                 )
             .addTo(map);
     });
