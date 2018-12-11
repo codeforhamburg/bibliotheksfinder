@@ -108,11 +108,12 @@ map.on("load", function() {
         new mapboxgl.Popup()
             .setLngLat(coordinates)
             .setHTML(
-                '<h1>' + name + '</h1>' +
-                '<p>' + telephone + '</p>'
-                '<p>' + email + '</p>'
-                '<p>' + streetAddress + '</p>'
-                '<p>' + postalCode + '</p>'
+                '<h1>' + 1 + name + '</h1>' + 
+                '<p>' + telephone + '</p>' + 
+                '<p>' + '</p>' + 
+                '<p>' + email + '</p>' + 
+                '<p>' + streetAddress + '</p>' + 
+                '<p>' + postalCode + '</p>' + 
                 '<p>' + Locality + '</p>'
                 )
             .addTo(map);
