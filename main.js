@@ -52,7 +52,7 @@ map.touchZoomRotate.enableRotation();
 map.on("load", function() {
     map.addSource("hamburg", {
         "type": "geojson",
-        "data": 'data/data.geojson'
+        "data": 'data/bibfinder.geojson'
     })
 
     // Layer for Points 
