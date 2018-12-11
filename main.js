@@ -7,8 +7,8 @@ const map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/kigrantz/cjpjpmeiy0fvl2rp3dvb67d99',
   //   style: 'mapbox://styles/mapbox/satellite-v9',
-  center: [13.095, 51.085], // Inital Position
-  zoom: 8, // initial zoom level
+  center: [13.5729, 51.2302], // Inital Position
+  zoom: 9.4, // initial zoom level
   maxZoom: 20, // maximales "reinzoomen"
   minZoom: 2, // maximales "rauszoomen"
   interactive: true, // if false, kein scrollen möglich
