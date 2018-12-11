@@ -1,13 +1,13 @@
 // Mapbox-Account with Access-Token // mapbox-static
-mapboxgl.accessToken = 'pk.eyJ1Ijoid2VidWlsZGNpdHkiLCJhIjoiY2ptdDlybmQzMG45ZzNwcDhvMmFqaWNraiJ9.-ywTD0VURed2camLe6eoMA';
+mapboxgl.accessToken = 'pk.eyJ1Ijoia2lncmFudHoiLCJhIjoiY2pwamw2MTcxMDgxdzNxcWRjaGsyNjI1YyJ9.5dsqBoRjroU5SgK4OywyFw';
 
 
 // Basis-"Map"-Einstellungen von Mapbox...https://www.mapbox.com/mapbox-gl-js/api/#map
 const map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/webuildcity/cjc6ix9zw4sc42smsom3lew8a',
+  style: 'mapbox://styles/kigrantz/cjpjpmeiy0fvl2rp3dvb67d99',
   //   style: 'mapbox://styles/mapbox/satellite-v9',
-  center: [9.9899031, 53.5790631], // Inital Position
+  center: [13.095, 51.085], // Inital Position
   zoom: 11.5, // initial zoom level
   maxZoom: 14.5, // maximales "reinzoomen"
   minZoom: 9.3, // maximales "rauszoomen"
