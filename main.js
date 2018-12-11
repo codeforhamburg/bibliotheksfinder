@@ -92,7 +92,7 @@ map.on("load", function() {
     map.on('click', 'alster-points', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
         var name = e.features[0].properties.name;
-        var bibliothekstyp = e.features[0].properties.classification.label.de;
+        var telephone = e.features[0].properties.telephone;
 
         // Ensure that if the map is zoomed out such that multiple
         // copies of the feature are visible, the popup appears
@@ -105,7 +105,7 @@ map.on("load", function() {
             .setLngLat(coordinates)
             .setHTML(
                 '<h1>' + name + '</h1>' +
-                '<p>' + bibliothekstyp + '</p>'
+                '<p>' + telephone + '</p>'
                 )
             .addTo(map);
     });
