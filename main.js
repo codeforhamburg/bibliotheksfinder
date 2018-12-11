@@ -93,6 +93,10 @@ map.on("load", function() {
         var coordinates = e.features[0].geometry.coordinates.slice();
         var name = e.features[0].properties.name;
         var telephone = e.features[0].properties.telephone;
+        var email = e.features[0].properties.email;
+        var streetAddress = e.features[0].properties.streetAddress;
+        var postalCode = e.features[0].properties.postalCode;
+        var Locality = e.features[0].properties.Locality;
 
         // Ensure that if the map is zoomed out such that multiple
         // copies of the feature are visible, the popup appears
@@ -106,6 +110,10 @@ map.on("load", function() {
             .setHTML(
                 '<h1>' + name + '</h1>' +
                 '<p>' + telephone + '</p>'
+                '<p>' + email + '</p>'
+                '<p>' + streetAddress + '</p>'
+                '<p>' + postalCode + '</p>'
+                '<p>' + Locality + '</p>'
                 )
             .addTo(map);
     });
