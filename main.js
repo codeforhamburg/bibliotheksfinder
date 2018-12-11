@@ -92,11 +92,11 @@ map.on("load", function() {
     map.on('click', 'alster-points', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
         var name = e.features[0].properties.name;
-        var telephone = e.features[0].properties.telephone;
-        var email = e.features[0].properties.email;
         var streetAddress = e.features[0].properties.streetAddress;
         var postalCode = e.features[0].properties.postalCode;
         var Locality = e.features[0].properties.Locality;
+      var telephone = e.features[0].properties.telephone;
+        var email = e.features[0].properties.email;
         var url = e.features[0].properties.url;
 
         // Ensure that if the map is zoomed out such that multiple
