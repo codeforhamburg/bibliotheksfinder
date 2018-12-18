@@ -21,14 +21,14 @@ body { margin:0; padding:0; }
 
 .mapboxgl-popup-content a {
   text-decoration: none;
-  color: chartreuse;
+  color: black;
 
 }
 
 
 .mapboxgl-popup-content p {
   text-decoration: none;
-  color: rgb(13, 0, 255);
+  color: black;
 
 }
 
