@@ -67,7 +67,7 @@ map.on("load", function() {
             "icon-image": "star-15",
             "icon-size": 3.25,
             "icon-allow-overlap": true,
-          "icon-color": "blue",
+          "icon-color": "blue"
         },
        // "paint": {
        //  "circle-radius": 12, // Marker size
