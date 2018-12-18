@@ -115,7 +115,8 @@ map.on("load", function() {
                 '<p>' + Locality + '</p>' +
                '<p>' + telephone + '</p>' +
                 '<p>' + email + '</p>' + 
-                '<p>'<a href=" + url + " />'</p>'
+                '<p>' + url + '</p>'
+                // '<p>' + '<a href="' + url + '"/>' + '</p>'
                 )
             .addTo(map);
     });
