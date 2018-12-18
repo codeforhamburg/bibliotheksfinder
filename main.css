@@ -31,3 +31,9 @@ body { margin:0; padding:0; }
   color: rgb(13, 0, 255);
 
 }
+
+.mapboxgl-popup-content h1 {
+  text-decoration: none;
+  color: rgb(13, 0, 255);
+
+}
