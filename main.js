@@ -115,8 +115,8 @@ map.on("load", function() {
                 '<a href="tel:' + telephone + '">' + telephone + '</a>' + '<br>' +
                 '<a href="mailto:' + email + '">' + email + '</a>' + '<br>' +
                 // '<i class="fa fa-file-image-o" aria-hidden="true"></i>' + 
-                '<img src="/images/image-link.svg">' + '<br>' + 
-                '<a href="' + url + '" target=_"blank">' + url + '</a>' + '<br>' + 
+                // '<img src="/images/image-link.svg">' + '<br>' + 
+                // '<a href="' + url + '" target=_"blank">' + url + '</a>' + '<br>' + 
                 '<a href="' + url + '" target=_"blank">' + '<img src="./images/image-link.svg">' + '</a>' + ' ' + '<a href="' + url + '" target=_"blank">' + url + '</a>' + '<br>'
                 )
             .addTo(map);
