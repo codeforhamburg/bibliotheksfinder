@@ -112,7 +112,6 @@ map.on("load", function() {
                 '<h1>' + name + '</h1>' + 
                 '<p>' + streetAddress + '</p>' + 
                 '<p>' + postalCode + ' ' + Locality + '</p>' + 
-                '<p>' + Locality + '</p>' +
                 '<a href="tel:' + telephone + '">' + telephone + '</a>' + '<br>' +
                 '<a href="mailto:' + email + '">' + email + '</a>' + '<br>' +
                 // '<i class="fa fa-file-image-o" aria-hidden="true"></i>' + 
