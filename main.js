@@ -68,10 +68,10 @@ map.on("load", function() {
             "icon-size": 3.25,
             "icon-allow-overlap": true
         },
-        // "paint": {
-        //     "circle-radius": 12, // Marker size
-        //     "circle-color": "yellow" // Marker color
-        // },
+        "paint": {
+         "circle-radius": 12, // Marker size
+         "circle-color": "yellow" // Marker color
+        },
         "filter": ["==", "$type", "Point"],
     });
 
