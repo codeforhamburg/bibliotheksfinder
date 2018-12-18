@@ -110,7 +110,7 @@ map.on("load", function() {
             .setLngLat(coordinates)
             .setHTML(
                 '<h1>' + name + '</h1>' + 
-                '<p>' + streetAddress + '</p>' + 
+                '<p>' + streetAddress + postalCode + Locality + '</p>' + 
                 '<p>' + postalCode + '</p>' + 
                 '<p>' + Locality + '</p>' +
                 '<a href="tel:' + telephone + '">' + telephone + '</a>' + '<br>' +
