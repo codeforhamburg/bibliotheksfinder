@@ -95,7 +95,7 @@ map.on("load", function() {
         var streetAddress = e.features[0].properties.streetAddress;
         var postalCode = e.features[0].properties.postalCode;
         var Locality = e.features[0].properties.Locality;
-      var telephone = e.features[0].properties.telephone;
+        var telephone = e.features[0].properties.telephone;
         var email = e.features[0].properties.email;
         var url = e.features[0].properties.url;
 
@@ -113,10 +113,12 @@ map.on("load", function() {
                 '<p>' + streetAddress + '</p>' + 
                 '<p>' + postalCode + '</p>' + 
                 '<p>' + Locality + '</p>' +
-               '<p>' + telephone + '</p>' +
-                '<p>' + email + '</p>' + 
-                '<p>' + url + '</p>'
-                // '<p>' + '<a href="' + url + '"/>' + '</p>'
+                '<a href="tel:' + telephone + '">' + telephone + '</a>' + '<br>' +
+                '<a href="mailto:' + email + '">' + email + '</a>' + '<br>' +
+                // '<i class="fa fa-file-image-o" aria-hidden="true"></i>' + 
+                '<img src="/images/image-link.svg">' + '<br>' + 
+                '<a href="' + url + '" target=_"blank">' + url + '</a>' + '<br>' + 
+                '<a href="' + url + '" target=_"blank">' + '<img src="./images/image-link.svg">' + '</a>'
                 )
             .addTo(map);
     });
