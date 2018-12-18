@@ -111,7 +111,7 @@ map.on("load", function() {
             .setHTML(
                 '<h1>' + name + '</h1>' + 
                 '<p>' + streetAddress + '</p>' + 
-                '<p>' + postalCode + Locality + '</p>' + 
+                '<p>' + postalCode + ' ' + Locality + '</p>' + 
                 '<p>' + Locality + '</p>' +
                 '<a href="tel:' + telephone + '">' + telephone + '</a>' + '<br>' +
                 '<a href="mailto:' + email + '">' + email + '</a>' + '<br>' +
