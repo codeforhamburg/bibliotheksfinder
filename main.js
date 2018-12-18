@@ -64,7 +64,7 @@ map.on("load", function() {
         "type": "symbol",
         "source": "hamburg",
         "layout": {
-            "icon-image": "park-15",
+            "icon-image": "marker-15",
             "icon-size": 3.25,
             "icon-allow-overlap": true
         },
