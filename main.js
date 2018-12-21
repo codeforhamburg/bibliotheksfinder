@@ -109,10 +109,8 @@ map.on("load", function() {
         new mapboxgl.Popup()
             .setLngLat(coordinates)
             .setHTML(
-                '<h1>' + name + '</h1>' + 
-                // '<p>' + streetAddress + '</p>' + 
-                //  '<p>' + postalCode + ' ' + Locality + '</p>' + 
-                '<p>' + streetAddress + '<br>' + postalCode + ' ' + Locality + '</p>' +
+                '<h1>' + name + '</h1>' +
+                '<p>' + streetAddress + '<br>' + postalCode + ' ' + Locality + '</p>' + '<br>' +
                 
                 
                 '<a href="tel:' + telephone + '">' + '<img src="./images/telephone.png" id="bildtelephone">' + '</a>' + ' ' + '<a href="tel:' + telephone + '">' + telephone + '</a>' + '<br>' +
