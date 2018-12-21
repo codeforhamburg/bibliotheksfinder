@@ -112,7 +112,8 @@ map.on("load", function() {
                 '<h1>' + name + '</h1>' + 
                 '<p>' + streetAddress + '</p>' + 
                 '<p>' + postalCode + ' ' + Locality + '</p>' + 
-                '<a href="tel:' + telephone + '">' + '<img src="./images/telephone.png">' + '</a>' + ' ' + '<a href="tel:' + telephone + '">' + telephone + '</a>' + '<br>' +
+                // '<a href="tel:' + telephone + '">' + '<img src="./images/telephone.png">' + '</a>' + ' ' + '<a href="tel:' + telephone + '">' + telephone + '</a>' + '<br>' +
+                '<a href="tel:' + telephone + '">' + '<img src="./images/telephone.png" id="bild1">' + '</a>' + ' ' + '<a href="tel:' + telephone + '">' + telephone + '</a>' + '<br>' +
                 '<a href="mailto:' + email + '">' + '<img src="./images/email.png">' + '</a>' + ' ' + '<a href="mailto:' + email + '">' + email + '</a>' + '<br>' +
                 // '<i class="fa fa-file-image-o" aria-hidden="true"></i>' + 
                 // '<img src="/images/image-link.svg">' + '<br>' + 
