@@ -1,6 +1,6 @@
 # Bibliotheksfinder - ein Open-Data-Projekt von Marina Schmitchen und Kirstin Grantz
 
-Projektziel ist eine responsive Webseite, auf der alle öffentlichen Bibliotheken Deutschlands auf einer Karte zu finden sind. Wir wollen damit Nutzer ansprechen, die neu in eine Stadt ziehen, dort Urlaub machen, auf Dienstreise sind, in Krankenhaus/Reha sind … und sich schnell darüber informieren wollen, wo sie die nächste Bibliothek finden.
+Projektziel ist eine responsive Webseite, auf der alle öffentlichen Bibliotheken Deutschlands auf einer Karte zu finden sind. Wir wollen damit Nutzer ansprechen, die neu in eine Stadt ziehen, dort Urlaub machen, auf Dienstreise sind, in Krankenhaus/Reha sind o.ä. und sich schnell darüber informieren wollen, wo sie die nächste Bibliothek finden.
 Dazu haben wir einen Prototyp mit 20 Bibliotheken im Großraum Dresden erstellt.
 Jede Bibliothek ist mit einem Sternchen auf der Karte gekennzeichnet. Beim Anklicken dieser Sternchen öffnen sich Popup-Fenster mit:
   - Name der Bibliothek
