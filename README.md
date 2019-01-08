@@ -8,7 +8,8 @@ Jede Bibliothek ist mit einem Sternchen auf der Karte gekennzeichnet. Beim Ankli
   - Telefon
   - Mail
   - Webseite
-Telefon, Mail und URL sind so verlinkt, dass beim Anklicken direkt ein Anruf oder eine Mail ausgelöst wird bzw. die Webseite aufgerufen wird.
+
+Telefonnummer, Mailadresse und URL sind so verlinkt, dass beim Anklicken direkt ein Anruf oder eine Mail ausgelöst wird bzw. die Webseite aufgerufen wird.
 
 Unsere Zukunftsvisionen:
   - Dass der Nutzer sich auf der Karte seinen Standort anzeigen und die Entfernung und Route zur nächstgelegenen Bibliothek
