@@ -3,11 +3,11 @@
 Projektziel ist eine responsive Webseite, auf der alle öffentlichen Bibliotheken Deutschlands auf einer Karte zu finden sind. Wir wollen damit Nutzer ansprechen, die neu in eine Stadt ziehen, dort Urlaub machen, auf Dienstreise sind, in Krankenhaus/Reha sind … und sich schnell darüber informieren wollen, wo sie die nächste Bibliothek finden.
 Dazu haben wir einen Prototyp mit 20 Bibliotheken im Großraum Dresden erstellt.
 Jede Bibliothek ist mit einem Sternchen auf der Karte gekennzeichnet. Beim Anklicken dieser Sternchen öffnen sich Popup-Fenster mit:
-  o	Name der Bibliothek
-  o	Anschrift
-  o	Telefon
-  o	Mail
-  o	Webseite
+  - Name der Bibliothek
+  - Anschrift
+  - Telefon
+  - Mail
+  - Webseite
 Telefon, Mail und URL sind so verlinkt, dass beim Anklicken direkt ein Anruf oder eine Mail ausgelöst wird bzw. die Webseite aufgerufen wird.
 
 Unsere Zukunftsvisionen:
