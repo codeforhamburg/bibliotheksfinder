@@ -1,16 +1,16 @@
 // Mapbox-Account with Access-Token // mapbox-static
-mapboxgl.accessToken = 'pk.eyJ1Ijoid2VidWlsZGNpdHkiLCJhIjoiY2ptdDlybmQzMG45ZzNwcDhvMmFqaWNraiJ9.-ywTD0VURed2camLe6eoMA';
+mapboxgl.accessToken = 'pk.eyJ1Ijoia2lncmFudHoiLCJhIjoiY2pwamw2MTcxMDgxdzNxcWRjaGsyNjI1YyJ9.5dsqBoRjroU5SgK4OywyFw';
 
 
 // Basis-"Map"-Einstellungen von Mapbox...https://www.mapbox.com/mapbox-gl-js/api/#map
 const map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/webuildcity/cjc6ix9zw4sc42smsom3lew8a',
+  style: 'mapbox://styles/kigrantz/cjpjpmeiy0fvl2rp3dvb67d99',
   //   style: 'mapbox://styles/mapbox/satellite-v9',
-  center: [9.9899031, 53.5790631], // Inital Position
-  zoom: 11.5, // initial zoom level
-  maxZoom: 14.5, // maximales "reinzoomen"
-  minZoom: 9.3, // maximales "rauszoomen"
+  center: [13.5729, 51.2302], // Inital Position
+  zoom: 9.4, // initial zoom level
+  maxZoom: 20, // maximales "reinzoomen"
+  minZoom: 2, // maximales "rauszoomen"
   interactive: true, // if false, kein scrollen möglich
   logoPosition: 'bottom-left', // Position des Mapbox Logos, default 'bottom-left'
   keyboard: true, // if false, kann nicht mehr mit den Tastatur-Pfeilen navigiert werden
@@ -52,7 +52,7 @@ map.touchZoomRotate.enableRotation();
 map.on("load", function() {
     map.addSource("hamburg", {
         "type": "geojson",
-        "data": 'data/data.geojson'
+        "data": 'data/bibfinder.geojson'
     })
 
     // Layer for Points 
@@ -64,14 +64,14 @@ map.on("load", function() {
         "type": "symbol",
         "source": "hamburg",
         "layout": {
-            "icon-image": "park-15",
+            "icon-image": "star-15",
             "icon-size": 3.25,
-            "icon-allow-overlap": true
+            "icon-allow-overlap": true        
         },
-        // "paint": {
-        //     "circle-radius": 12, // Marker size
-        //     "circle-color": "yellow" // Marker color
-        // },
+       // "paint": {
+       //  "circle-radius": 12, // Marker size
+       // "circle-color": "yellow" // Marker color
+       //},
         "filter": ["==", "$type", "Point"],
     });
 
@@ -92,7 +92,12 @@ map.on("load", function() {
     map.on('click', 'alster-points', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
         var name = e.features[0].properties.name;
-        var description = e.features[0].properties.description;
+        var streetAddress = e.features[0].properties.streetAddress;
+        var postalCode = e.features[0].properties.postalCode;
+        var Locality = e.features[0].properties.Locality;
+        var telephone = e.features[0].properties.telephone;
+        var email = e.features[0].properties.email;
+        var url = e.features[0].properties.url;
 
         // Ensure that if the map is zoomed out such that multiple
         // copies of the feature are visible, the popup appears
@@ -105,7 +110,15 @@ map.on("load", function() {
             .setLngLat(coordinates)
             .setHTML(
                 '<h1>' + name + '</h1>' +
-                '<p>' + description + '</p>'
+                '<p>' + streetAddress + '<br>' + postalCode + ' ' + Locality + '</p>' + '<br>' +
+                
+                
+                '<a href="tel:' + telephone + '">' + '<img src="./images/telephone.png" id="bildtelephone">' + '</a>' + ' ' + '<a href="tel:' + telephone + '">' + telephone + '</a>' + '<br>' +
+                '<a href="mailto:' + email + '">' + '<img src="./images/email.png" id="bildemail">' + '</a>' + ' ' + '<a href="mailto:' + email + '">' + email + '</a>' + '<br>' +
+                // '<i class="fa fa-file-image-o" aria-hidden="true"></i>' + 
+                // '<img src="/images/image-link.svg">' + '<br>' + 
+                // '<a href="' + url + '" target=_"blank">' + url + '</a>' + '<br>' + 
+                '<a href="' + url + '" target=_"blank">' + '<img src="./images/www.png" id="bildwww">' + '</a>' + ' ' + '<a href="' + url + '" target=_"blank">' + url + '</a>' + '<br>'
                 )
             .addTo(map);
     });
